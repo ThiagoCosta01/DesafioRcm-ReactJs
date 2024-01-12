@@ -93,6 +93,7 @@ const App = () => {
   return (
     <div className="App">
       <header className="App-header">
+
         <div className="Container">
           {/* Título */}
           <h1 className="custom-h1" id='title'>Clima - RMC</h1>
@@ -104,7 +105,8 @@ const App = () => {
             </div>
             <h3>Localização atual: </h3>
             {/* Temperatura */}
-            <p>{userLocation.main && `${Math.trunc(userLocation.main.temp - 273.15)}°`}</p>
+            <p>{userLocation.main && `${(userLocation.main.temp - 273.15).toFixed(1)}°`}</p>
+
             <div className='d-flex  justify-content-center' id='cityWeatherDetails'>
               {/* Nome da Cidade */}
               <p>{userLocation.name}</p>
@@ -122,7 +124,7 @@ const App = () => {
           {/* Localização Buscada */}
           <div className="Search">
             <h2>Pesquisar</h2>
-            <div className='form-group d-flex align-items-center'>
+            <div className='form-group d-flex align-items-center' id='searchInputsGroup'>
               {/* Caixa de Buscas */}
               <input
                 className='form-control'
@@ -141,7 +143,7 @@ const App = () => {
                 {/* Bandeira do país */}
                 <img src={`https://flagsapi.com/${weather.sys.country}/flat/64.png`} />
                 {/* Temperatura */}
-                <p>{weather.main.temp}°</p>
+                <p>{(weather.main.temp).toFixed(1)}°</p>
                 {/* Nome da Cidade */}
                 <p id='cityNameWeather'>{weather.name}</p>
                 <div className='d-flex align-items-center justify-content-center ' id='descWeather'>
@@ -154,9 +156,9 @@ const App = () => {
             )}
           </div>
         </div>
-        {/* Modo Escuro (função ainda incompleta) */}
+        {/* Modo Noturno (função ainda incompleta) */}
         <label htmlFor="switch" id='switchLabel'>
-          Modo Escuro
+          Modo Noturno
           <input type="checkbox" id="switch" defaultChecked />
         </label>
 
