@@ -1,16 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;600;700;900&family=Nunito:wght@500&display=swap');
+
 .App {
   text-align: center;
-}
+  font-family: "Nunito";
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -21,7 +14,11 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(255, 255, 255);
+  background: url("https://hips.hearstapps.com/hmg-prod/images/bryggen-street-bergen-architecture-water-winter-1576001288.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .App-link {
@@ -35,4 +32,41 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.Container {
+  padding: 20px;
+  
+  background-color: #2c4f9b;
+  border-radius: 10px;
+  font-weight: bold;
+  text-transform: capitalize;
+  padding: 10px;
+
+}
+
+
+#detailsLocation{
+  margin-top: 5px;
+}
+
+#cityNameWeather{
+  font-size: 25px;
+}
+
+#weather-icon{
+  margin-bottom: 6%;
+}
+
+
+#descWeather{
+  margin-left: 35px;
+
+}
+
+#linha{
+  border-right: 1px solid white; /* Adapte conforme necessário */
+  height: 20px;
+  margin-left: 10px;
+  
 }
