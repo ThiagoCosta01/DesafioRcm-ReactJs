@@ -83,8 +83,11 @@ Atualizações Pendentes na Aplicação:
 
 Decisões de Design:
 *Optei por utilizar hardcode em algumas partes, como a estilização com css, por achar que me deu maior maleabilidade e controle.
+
 *O design da parte de pesquisa é levemente diferente da localização do usuário, como estão juntos na mesma página, achei melhor deixar assim, para que o usuário possa diferenciar visualmente com maio facilidade os dois métodos
+
 *O nome das variáveis e classes estão em inglês, só as explicações/comentários em português
+
 *APIs utilizadas: OpenWeatherMap (dados sobre o clima) e flagsapi (exibe imagem da bandeira do país)
 
 Principais Desafios Enfrentados:
