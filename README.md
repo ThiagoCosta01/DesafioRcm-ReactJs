@@ -76,10 +76,14 @@ Dependências para rodar o projeto:
 npm install
 npm install bootstrap@v5.3.2
 npm install react-icons
+npm install --save-dev @babel/plugin-proposal-private-property-in-object
+
 
 Atualizações Pendentes na Aplicação:
 *Modo noturno
-*Refatoração com melhorias no fluxo de dados e interface
+*Refatoração com melhorias no fluxo de dados, interface, organização do código
+*tratar erros de código e dependências
+
 
 Decisões de Design:
 *Optei por utilizar hardcode em algumas partes, como a estilização com css, por achar que me deu maior maleabilidade e controle.
