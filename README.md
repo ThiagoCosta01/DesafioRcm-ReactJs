@@ -68,3 +68,27 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+### Sobre o projeto:
+
+Dependências para rodar o projeto:
+npm install
+npm install bootstrap@v5.3.2
+npm install react-icons
+
+Atualizações Pendentes na Aplicação:
+*Modo noturno
+*Refatoração com melhorias no fluxo de dados e interface
+
+Decisões de Design:
+*Optei por utilizar hardcode em algumas partes, como a estilização com css, por achar que me deu maior maleabilidade e controle.
+*O design da parte de pesquisa é levemente diferente da localização do usuário, como estão juntos na mesma página, achei melhor deixar assim, para que o usuário possa diferenciar visualmente com maio facilidade os dois métodos
+*O nome das variáveis e classes estão em inglês, só as explicações/comentários em português
+*APIs utilizadas: OpenWeatherMap (dados sobre o clima) e flagsapi (exibe imagem da bandeira do país)
+
+Principais Desafios Enfrentados:
+*O maior desafio foi aprender a utilizar react e bootstrap em curto prazo de tempo e a estilização de alguns elementos na tela.
+
+
+Autor: Thiago Costa

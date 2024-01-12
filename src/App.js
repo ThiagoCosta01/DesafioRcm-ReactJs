@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
     getUserLocation();
-  }, []); // Chamada da localização do usuário quando o componente monta
+  }, []); 
 
   const fetchData = async (url) => {
     try {
@@ -66,15 +66,16 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <div className="Container">
-          <h1 className="custom-h1">Clima - RMC</h1>
+          <h1 className="custom-h1" id='title'>Clima - RMC</h1>
           <div className="UserLocation">
             <h3>Localização atual: </h3>
+
             <p>{userLocation.main && `${Math.trunc(userLocation.main.temp - 273.15)}°`}</p>
-            <div className='d-flex align-items-center justify-content-center' >
+            <div className='d-flex  justify-content-center' id='cityWeatherDetails'>
 
               <p>{userLocation.name}</p>
 
-              <div className='d-flex align-items-center justify-content-center' id='linha' ></div>
+              <div id='verticalLine' ></div>
 
               <p id='descWeather'>{userLocation.weather && userLocation.weather[0].description}</p>
               <img src={imgUrlUser} alt="" id="weather-icon" />
@@ -86,7 +87,7 @@ const App = () => {
             <div className='form-group d-flex align-items-center'>
               <input
                 className='form-control'
-                
+                id='searchInput'
                 type="text"
                 placeholder="Cidade"
                 value={search}

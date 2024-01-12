@@ -6,6 +6,8 @@
 
 }
 
+
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -45,6 +47,9 @@
 
 }
 
+#title{
+  margin-bottom: 20px;
+}
 
 #detailsLocation{
   margin-top: 5px;
@@ -56,17 +61,27 @@
 
 #weather-icon{
   margin-bottom: 6%;
+  
 }
 
+#searchInput:hover{
+  background-color: #e0e0e9f6;
+}
 
 #descWeather{
-  margin-left: 35px;
+  margin-left: 15px;
+}
+
+#cityWeatherDetails{
+  padding: 0px;
+  margin: 10px;
 
 }
 
-#linha{
-  border-right: 1px solid white; /* Adapte conforme necessário */
+#verticalLine{
+  border-right: 1px solid white; 
   height: 20px;
   margin-left: 10px;
+  margin: 10px;
   
 }
