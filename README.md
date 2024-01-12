@@ -72,7 +72,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Sobre o projeto:
 
-Dependências para rodar o projeto:
+Dependências para necessárias o projeto:
 npm install
 npm install bootstrap@v5.3.2
 npm install react-icons
